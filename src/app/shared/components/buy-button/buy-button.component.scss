@@ -1,0 +1,11 @@
+@import "/src/styles.scss";
+
+.buy-button {
+  background-color: $colorOrange;
+  color: $colorBlack;
+  padding: 10px 30px;
+  width: 280px;
+  font-size: 25px;
+  border-radius: 50px;
+  font-weight: bold;
+}

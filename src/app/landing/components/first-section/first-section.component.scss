@@ -1,0 +1,39 @@
+@import "/src/styles.scss";
+
+.first-section {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../../../../assets/img/fotos/fondo-agua.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  padding: 120px 40px 50px 40px;
+  position: relative;
+
+  h2, p {
+    text-align: center;
+    color: $colorLightBlue;
+    font-size: 16px;
+    font-weight: 500;
+
+    span {
+      color: $colorWhite;
+    }
+  }
+
+  .img-title {
+    margin-bottom: 10px;
+  }
+
+  .img-library {
+    margin-top: 15px;
+  }
+
+  .button {
+    margin-top: 40px;
+  }
+}
