@@ -1,0 +1,25 @@
+@import "/src/styles.scss";
+
+.quarter-section {
+  padding: 40px 30px 60px 30px;
+
+  h2 {
+    text-align: center;
+    font-size: 27px;
+    color: $colorViolet;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  p {
+    color: $colorBlack;
+    margin-bottom: 20px;
+  }
+
+  a {
+    cursor: pointer;
+    color: $colorViolet;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}

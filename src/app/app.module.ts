@@ -8,6 +8,7 @@ import { FirstSectionComponent } from './landing/components/first-section/first-
 import { SharedModule } from './shared/shared.module';
 import { SecondSectionComponent } from './landing/components/second-section/second-section.component';
 import { ThirdSectionComponent } from './landing/components/third-section/third-section.component';
+import { QuarterSectionComponent } from './landing/components/quarter-section/quarter-section.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ThirdSectionComponent } from './landing/components/third-section/third-
     FirstSectionComponent,
     SecondSectionComponent,
     ThirdSectionComponent,
+    QuarterSectionComponent,
   ],
   imports: [
     BrowserModule,
