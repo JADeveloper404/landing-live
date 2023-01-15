@@ -1,0 +1,79 @@
+@import "/src/styles.scss";
+
+.second-section {
+  padding: 40px 30px;
+  background-color: $colorDarkBlue;
+  color: $colorWhite;
+  min-height: 100vh;
+
+  h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .container-foto {
+    margin-bottom: 20px;
+
+    &::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+
+    .name-foto {
+      margin-top: 30px;
+      position: relative;
+      background-image: url("../../../../assets/img/fotos/angy.png");
+      width: 190px;
+      height: 190px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: cover;
+      float: right;
+
+      .content-name {
+        position: absolute;
+        font-size: 19px;
+        top: 30px;
+        left: -112px;
+
+        .name {
+          color: $colorLightBlue;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 21px;
+        }
+      }
+    }
+  }
+
+  .text-content {
+    margin-bottom: 20px;
+    p {
+      margin-bottom: 13px;
+    }
+  }
+
+  .text-title {
+    margin: 20px 0;
+    h2 {
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+}
+
+.line {
+  background-color: $colorWhite;
+  height: 5px;
+  width: 65%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.margin {
+  margin-top: 20px;
+}
+
+
