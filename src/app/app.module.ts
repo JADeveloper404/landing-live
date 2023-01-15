@@ -11,6 +11,7 @@ import { ThirdSectionComponent } from './landing/components/third-section/third-
 import { QuarterSectionComponent } from './landing/components/quarter-section/quarter-section.component';
 import { FifthSectionComponent } from './landing/components/fifth-section/fifth-section.component';
 import { SixSectionComponent } from './landing/components/six-section/six-section.component';
+import { SevenSectionComponent } from './landing/components/seven-section/seven-section.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SixSectionComponent } from './landing/components/six-section/six-sectio
     QuarterSectionComponent,
     FifthSectionComponent,
     SixSectionComponent,
+    SevenSectionComponent,
   ],
   imports: [
     BrowserModule,
