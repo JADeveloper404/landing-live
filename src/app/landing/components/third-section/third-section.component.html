@@ -1,0 +1,44 @@
+<section id="library" class="third-section">
+  <h2>Al leer este libro:</h2>
+
+  <div class="text-list" *ngFor="let item of dataList">
+    <img [src]="item.src" alt="Icon check" />
+    <p>{{ item.text }}</p>
+  </div>
+
+  <div class="image-book">
+    <img
+      src="../../../../assets/img/libros/Libro-02.png"
+      alt="Libro 2"
+      width="280px"
+    />
+  </div>
+
+  <div class="container-center">
+    <div class="discount">Aprovecha el descuento por</div>
+
+    <img
+      src="../../../../assets/img/tipografias/Titulos-03.png"
+      alt="Titulos-03"
+      width="300px"
+    />
+  </div>
+
+  <p class="promo">- Solo el 21 de Enero de 2023 -</p>
+
+  <div class="vlr-libro">
+    <p class="libro">Valor libro: <span>$80.000</span></p>
+    <p class="lanzamiento">Lanzamiento: <span>$68.000</span></p>
+  </div>
+
+  <div class="container-center">
+    <app-buy-button></app-buy-button>
+  </div>
+
+  <div class="content-info">
+    <p>
+      Compra el libro VIVE CON PROPÓSITOS y descrubre el mensaje que Dios tiene
+      para ti...
+    </p>
+  </div>
+</section>

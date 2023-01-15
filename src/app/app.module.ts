@@ -7,6 +7,7 @@ import { MenuComponent } from './landing/components/menu/menu.component';
 import { FirstSectionComponent } from './landing/components/first-section/first-section.component';
 import { SharedModule } from './shared/shared.module';
 import { SecondSectionComponent } from './landing/components/second-section/second-section.component';
+import { ThirdSectionComponent } from './landing/components/third-section/third-section.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { SecondSectionComponent } from './landing/components/second-section/seco
     MenuComponent,
     FirstSectionComponent,
     SecondSectionComponent,
+    ThirdSectionComponent,
   ],
   imports: [
     BrowserModule,
