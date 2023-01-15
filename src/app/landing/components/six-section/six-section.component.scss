@@ -1,0 +1,50 @@
+@import "/src/styles.scss";
+
+.six-section {
+  background-color: $colorDarkBlue;
+  padding: 40px 30px;
+
+  h2 {
+    font-size: 25px;
+    color: $colorWhite;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  p {
+    color: $colorWhite;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  h3 {
+    font-size: 20px;
+    color: $colorWhite;
+  }
+
+  .list {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  .center {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .text-trilogy {
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    p {
+      color: $colorWhite;
+      margin-bottom: 4px;
+    }
+
+    .max {
+      font-weight: bold;
+      font-size: 22px;
+    }
+  }
+}
