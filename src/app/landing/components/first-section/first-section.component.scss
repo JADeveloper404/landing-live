@@ -10,6 +10,7 @@
   background-image: url("../../../../assets/img/fotos/fondo-agua.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   object-fit: cover;
   padding: 120px 40px 50px 40px;
   position: relative;
@@ -35,5 +36,23 @@
 
   .button {
     margin-top: 40px;
+  }
+}
+
+.desktop {
+  display: none;
+}
+
+@media screen and(min-width: 700px) {
+  .first-section {
+    background-image: url("../../../../assets/img/fotos/Fondo-agua-2.jpg");
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .cel {
+    display: none;
   }
 }
