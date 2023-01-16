@@ -5,7 +5,8 @@
   background-image: url("../../../../assets/img/fotos/fondo-barco.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 65% 50%;
+  // background-attachment: fixed;
 
   p {
     color: $colorWhite;
@@ -15,5 +16,17 @@
   .bold {
     font-weight: bold;
     color: $colorLightBlue;
+  }
+}
+
+@media screen and(min-width: 800px) {
+  .seven-section {
+    height: 400px;
+    background-image: url("../../../../assets/img/fotos/Fondo-barco-2.jpg");
+    background-position: 80% 80%;
+    .container {
+      margin: 0 auto;
+      width: 600px;
+    }
   }
 }

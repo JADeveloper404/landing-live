@@ -11,15 +11,26 @@
     margin-bottom: 30px;
   }
 
-  p {
-    color: $colorBlack;
-    margin-bottom: 20px;
-  }
+  .container {
+    p {
+      color: $colorBlack;
+      margin-bottom: 20px;
+    }
 
-  a {
-    cursor: pointer;
-    color: $colorViolet;
-    text-decoration: none;
-    font-weight: bold;
+    a {
+      cursor: pointer;
+      color: $colorViolet;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and(min-width: 800px) {
+  .quarter-section {
+    .container {
+      margin: 0 auto;
+      width: 600px;
+    }
   }
 }
