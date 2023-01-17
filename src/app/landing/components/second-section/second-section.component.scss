@@ -1,13 +1,13 @@
 @import "/src/styles.scss";
 
 .second-section {
-  padding: 40px 30px;
+  padding: 40px 35px;
   background-color: $colorDarkBlue;
   color: $colorWhite;
   min-height: 100vh;
 
   h2 {
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
   }
 
@@ -33,15 +33,15 @@
 
       .content-name {
         position: absolute;
-        font-size: 19px;
+        font-size: 16px;
         top: 30px;
         left: -112px;
+        font-weight: bold;
 
         .name {
           color: $colorLightBlue;
           text-transform: uppercase;
-          font-weight: bold;
-          font-size: 21px;
+          font-size: 20px;
         }
       }
     }
@@ -53,6 +53,8 @@
       .text-content {
         margin-bottom: 20px;
         p {
+          font-size: 14.5px;
+          line-height: 20px;
           margin-bottom: 13px;
         }
       }
@@ -61,7 +63,8 @@
         margin: 20px 0;
         h2 {
           font-weight: bold;
-          font-size: 18px;
+          font-size: 14.5px;
+          margin: 0 10px;
           text-align: center;
 
           span {

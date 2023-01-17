@@ -7,8 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class BuyButtonComponent implements OnInit {
 
-  @Input() titleButton = "Comprar curso";
-  @Input() hrefButton = "#";
+  @Input() titleButton = "Comprar libro";
+  @Input() hrefButton = "https://checkout.wompi.co/l/BrogYN";
+  @Input() targetButton = "";
 
   constructor() { }
 

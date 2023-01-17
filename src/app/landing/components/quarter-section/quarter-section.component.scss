@@ -1,20 +1,23 @@
 @import "/src/styles.scss";
 
 .quarter-section {
-  padding: 40px 30px 85px 30px;
+  padding: 40px 35px 85px 35px;
 
   h2 {
     text-align: center;
-    font-size: 27px;
+    font-size: 20px;
     color: $colorViolet;
     text-transform: uppercase;
     margin-bottom: 30px;
+    line-height: 18px;
   }
 
   .container {
     p {
+      font-size: 14.5px;
       color: $colorBlack;
       margin-bottom: 20px;
+      line-height: 20px;
     }
 
     a {

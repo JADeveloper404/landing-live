@@ -1,13 +1,15 @@
 @import "/src/styles.scss";
 
 .third-section {
-  padding: 40px 30px;
+  padding: 40px 35px;
   background-color: $colorSkyBlue;
 
   h2 {
+    font-size: 20px;
     text-align: center;
     color: $colorViolet;
     margin-bottom: 35px;
+    line-height: 18px;
   }
 
   .row {
@@ -25,7 +27,9 @@
         }
 
         p {
+          font-size: 14.5px;
           color: $colorBlack;
+          line-height: 20px;
         }
       }
 
@@ -38,20 +42,20 @@
   }
 
   .discount {
-    padding: 10px;
-    font-size: 18px;
+    padding: 2px 5px;
+    font-size: 14.5px;
     font-weight: bold;
     color: $colorBlack;
     background-color: $colorWhite;
     border-radius: 20px;
     text-align: center;
-    width: 300px;
-    margin-bottom: 10px;
+    width: 250px;
+    margin-bottom: 5px;
   }
 
   .promo {
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     color: $colorDarkBlue;
   }
@@ -64,7 +68,7 @@
       color: $colorViolet;
       text-transform: uppercase;
       text-align: center;
-      font-size: 24px;
+      font-size: 22px;
       font-weight: bold;
 
       span {
@@ -77,7 +81,7 @@
       color: $colorDarkBlue;
       text-transform: uppercase;
       text-align: center;
-      font-size: 24px;
+      font-size: 22px;
       font-weight: bold;
 
       span {
@@ -93,10 +97,11 @@
     padding: 40px 0;
 
     p {
-      font-size: 18px;
+      font-size: 14.5px;
       text-align: center;
       color: $colorViolet;
       font-weight: bold;
+      line-height: 20px;
     }
   }
 }
@@ -109,7 +114,7 @@
 
 .desktop {
   background-color: $colorDarkBlue;
-  height: 4px;
+  height: 3px;
   margin: 30px 20px 30px 20px;
   display: none;
 }

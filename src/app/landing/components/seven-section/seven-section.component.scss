@@ -1,14 +1,14 @@
 @import "/src/styles.scss";
 
 .seven-section {
-  padding: 50px 30px 80px 30px;
-  background-image: url("../../../../assets/img/fotos/fondo-barco.jpg");
+  padding: 80px 35px 80px 35px;
+  background-image: url("../../../../assets/img/fotos/Fondo-barco-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 65% 50%;
-  // background-attachment: fixed;
 
   p {
+    font-size: 14.5px;
     color: $colorWhite;
     margin-bottom: 20px;
   }

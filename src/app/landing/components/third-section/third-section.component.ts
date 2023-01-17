@@ -10,7 +10,7 @@ export class ThirdSectionComponent implements OnInit {
   dataList = [
     {
       src: "../../../../assets/img/iconos/check.png",
-      text: "Sabrás cuáles son los 7 propositos para vivir una vida plena.",
+      text: "Sabrás cuáles son los 7 propósitos para vivir una vida plena.",
     },
     {
       src: "../../../../assets/img/iconos/check.png",
