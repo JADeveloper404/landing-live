@@ -123,6 +123,10 @@
     .row {
       .col {
         padding: 0 80px;
+
+        .text-title > h2 {
+          margin: 0 50px;
+        }
       }
     }
   }
