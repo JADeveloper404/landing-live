@@ -8,6 +8,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class BuyButtonComponent implements OnInit {
 
   @Input() titleButton = "Comprar libro";
+  @Input() desplace = false;
 
   @Output() clickButton = new EventEmitter();
 

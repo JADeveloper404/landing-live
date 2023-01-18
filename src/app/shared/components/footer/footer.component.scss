@@ -14,6 +14,7 @@
 
   h2 {
     color: $colorViolet;
+    font-size: 20px;
     margin-bottom: 30px;
   }
 
@@ -24,19 +25,19 @@
       align-items: center;
       margin-bottom: 10px;
       img {
-        width: 18px;
-        height: 18px;
+        width: 14.5px;
+        height: 14.5px;
         margin-right: 5px;
         margin-bottom: 0;
       }
 
       .icon-correo {
-        height: 13px;
+        height: 11px;
       }
 
       a {
         color: $colorViolet;
-        font-size: 18px;
+        font-size: 14.5px;
         cursor: pointer;
         text-decoration: none;
       }
@@ -48,7 +49,7 @@
 
     p {
       color: $colorWhite;
-      font-size: 15px;
+      font-size: 14.5px;
     }
   }
 }
