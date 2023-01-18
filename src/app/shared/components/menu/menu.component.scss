@@ -1,8 +1,12 @@
 @import "/src/styles.scss";
 
+a {
+  cursor: pointer;
+}
+
 .header {
   width: 100%;
-  height: 60px;
+  height: 65px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,8 +17,8 @@
   top: 0;
 
   .img-logo {
-    width: 120px;
-    height: 45px;
+    width: 130px;
+    height: 50px;
     background-image: url("../../../../assets/img/logos/logo-principal.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,8 +29,8 @@
     display: flex;
     align-items: center;
     .img-icon {
-      width: 20px;
-      height: 30px;
+      width: 25px;
+      height: 35px;
       background-image: url("../../../../assets/img/logos/icono-menu.png");
       background-repeat: no-repeat;
       background-size: cover;
