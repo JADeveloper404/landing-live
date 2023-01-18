@@ -1,1 +1,1 @@
-<a class="buy-button" [href]="hrefButton" [target]="targetButton">{{ titleButton | uppercase }}</a>
+<a class="buy-button" (click)="emit()">{{ titleButton | uppercase }}</a>

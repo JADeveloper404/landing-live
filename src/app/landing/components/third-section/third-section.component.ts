@@ -35,4 +35,8 @@ export class ThirdSectionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  redirect() {
+    window.open("https://checkout.wompi.co/l/BrogYN", "_blank");
+  }
+
 }

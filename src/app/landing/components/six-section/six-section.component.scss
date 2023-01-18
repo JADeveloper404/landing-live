@@ -54,21 +54,25 @@
 
 .desktop {
   display: none;
+
+  p {
+    margin-bottom: 0px;
+  }
+}
+
+.cel {
+  p {
+    margin-bottom: 3px;
+  }
 }
 
 @media screen and(min-width: 700px) {
   .desktop {
     display: block;
-    p {
-      margin-bottom: 5px;
-    }
   }
 
   .cel {
     display: none;
-    p {
-      margin-bottom: 5px;
-    }
   }
 
   .six-section {

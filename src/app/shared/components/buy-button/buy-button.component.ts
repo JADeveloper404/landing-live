@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-buy-button',
@@ -8,12 +8,16 @@ import { Component, Input, OnInit } from '@angular/core';
 export class BuyButtonComponent implements OnInit {
 
   @Input() titleButton = "Comprar libro";
-  @Input() hrefButton = "https://checkout.wompi.co/l/BrogYN";
-  @Input() targetButton = "";
+
+  @Output() clickButton = new EventEmitter();
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  emit() {
+    this.clickButton.emit();
   }
 
 }
