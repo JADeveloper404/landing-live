@@ -6,7 +6,7 @@ a {
 
 .header {
   width: 100%;
-  height: 65px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,9 +17,7 @@ a {
   top: 0;
 
   .img-logo {
-    width: 130px;
-    height: 50px;
-    background-image: url("../../../../assets/img/logos/logo-principal.png");
+    width: 120px;
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
@@ -30,8 +28,6 @@ a {
     align-items: center;
     .img-icon {
       width: 25px;
-      height: 35px;
-      background-image: url("../../../../assets/img/logos/icono-menu.png");
       background-repeat: no-repeat;
       background-size: cover;
       object-fit: cover;
