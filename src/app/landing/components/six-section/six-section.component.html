@@ -1,18 +1,4 @@
 <div class="six-section">
-  <h2>BONUS</h2>
-  <div class="cel">
-    <p>
-      Si compras el libro el día del LANZAMIENTO, tendrás una oferta especial en
-      los siguientes 2 libros de la Trilogía del Propósito.
-    </p>
-  </div>
-
-  <div class="desktop">
-    <p>Si compras el libro el día del LANZAMIENTO, tendrás</p>
-    <p>una oferta especial en los siguientes 2 libros de la</p>
-    <p>Trilogía del Propósito.</p>
-  </div>
-
   <div class="row">
     <div class="col-1">
       <h3>Próximamente</h3>
@@ -43,12 +29,29 @@
 
       <div class="text-trilogy cel">
         <p class="max">Esta trilogía</p>
-        <p>te inspirará a vivir y morir con propósito</p>
+        <p>te inspirará a vivir y morir</p>
+        <p>desde el propósito</p>
       </div>
     </div>
   </div>
 
   <div class="center mb">
-    <app-buy-button (clickButton)="redirect()"></app-buy-button>
+    <app-buy-button
+      titleButton="Suscribirme"
+      (clickButton)="openModal()"
+    ></app-buy-button>
+  </div>
+
+  <div class="text-suscribe cel">
+    <p>
+      Dejanos tus datos y sé de los primeros en adquirir La Trilogía del
+      Propósito cuando esté disponible, con una oferta especial.
+    </p>
+  </div>
+
+  <div class="text-suscribe desktop">
+    <p>Dejanos tus datos y sé de los primeros en adquirir La</p>
+    <p>Trilogía del Propósito cuando esté disponible, con una</p>
+    <p>oferta especial.</p>
   </div>
 </div>

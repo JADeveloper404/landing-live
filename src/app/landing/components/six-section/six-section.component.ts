@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,13 +9,13 @@ import { Router } from '@angular/router';
 })
 export class SixSectionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
 
-  redirect() {
-    window.open("https://checkout.wompi.co/l/BrogYN", "_blank");
+  openModal() {
+    // this.dialog.open();
   }
 
 }
