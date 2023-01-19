@@ -35,8 +35,13 @@
 
       .image-book {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         margin-bottom: 20px;
+
+        .btn {
+          margin: 40px 0;
+        }
       }
     }
   }
@@ -55,7 +60,7 @@
 
   .promo {
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     color: $colorDarkBlue;
   }
@@ -68,7 +73,7 @@
       color: $colorViolet;
       text-transform: uppercase;
       text-align: center;
-      font-size: 22px;
+      font-size: 21px;
       font-weight: bold;
 
       span {
@@ -81,7 +86,7 @@
       color: $colorDarkBlue;
       text-transform: uppercase;
       text-align: center;
-      font-size: 22px;
+      font-size: 23px;
       font-weight: bold;
 
       span {
@@ -136,6 +141,10 @@
           img {
             width: 350px;
           }
+
+          .btn {
+            margin: 20px 0 0 0;
+          }
         }
       }
     }
@@ -162,4 +171,16 @@
       }
     }
   }
+}
+
+.btn-pack {
+  background-color: $colorOrange;
+  color: $colorBlack;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }

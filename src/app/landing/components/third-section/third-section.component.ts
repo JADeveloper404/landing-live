@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ModalButtonsBuyComponent } from 'src/app/shared/components/modal-buttons-buy/modal-buttons-buy.component';
 
 @Component({
   selector: 'app-third-section',
@@ -30,13 +32,18 @@ export class ThirdSectionComponent implements OnInit {
     },
   ]
 
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
 
-  redirect() {
-    window.open("https://checkout.wompi.co/l/BrogYN", "_blank");
+  openModal() {
+    this.dialog.open(ModalButtonsBuyComponent, {
+      panelClass: "custom-modal",
+      data: {
+        promo: true
+      }
+    })
   }
 
 }

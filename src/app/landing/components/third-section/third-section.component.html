@@ -16,6 +16,7 @@
           alt="Libro 2"
           width="280px"
         />
+        <app-buy-button class="btn" (clickButton)="openModal()"></app-buy-button>
       </div>
     </div>
   </div>
@@ -26,31 +27,32 @@
     <div class="discount">Aprovecha el descuento por</div>
 
     <img
-      src="assets/img/tipografias/Titulos-03.png"
-      alt="Titulos-03"
-      width="250px"
+      src="assets/img/tipografias/Texto6.png"
+      alt="Pack 3 libros"
+      width="280px"
     />
   </div>
 
-  <p class="promo">- Solo el 21 de Enero de 2023 -</p>
+  <p class="promo">-Para regalar a tus amigos y familiares-</p>
 
   <div class="vlr-libro">
     <p class="libro">Valor libro: <span>$80.000</span></p>
-    <p class="lanzamiento">Lanzamiento: <span>$68.000</span></p>
+    <p class="libro">Pack 3 libros: 25% off</p>
+    <p class="lanzamiento">Valor total: <span>$180.000</span></p>
   </div>
 
   <div class="container-center">
-    <app-buy-button (clickButton)="redirect()"></app-buy-button>
+    <button class="btn-pack" (click)="openModal()">COMPRAR PACK 3 LIBROS</button>
   </div>
 
   <div class="content-info text-cel">
-    <p>Compra el libro VIVE CON</p>
-    <p>PROPÓSITOS y descubre el mensaje</p>
-    <p>que Dios tiene para ti...</p>
+    <p>Compra el PACK 3 LIBROS y</p>
+    <p>ayúdanos a difundir e impactar la</p>
+    <p>vida de millones de personas</p>
   </div>
 
   <div class="content-info text-desktop">
-    <p>Compra el libro VIVE CON PROPÓSITOS y</p>
-    <p>descubre el mensaje que Dios tiene para ti...</p>
+    <p>Compra el PACK 3 LIBROS y ayúdanos a difundir</p>
+    <p>e impactar la vida de millones de personas</p>
   </div>
 </section>

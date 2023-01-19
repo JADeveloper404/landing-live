@@ -20,3 +20,8 @@ $colorDarkOrange: #ffb454;
 body {
   font-family: "Poppins", sans-serif;
 }
+
+// Estilos de modal
+.custom-modal .mat-dialog-container {
+  border-radius: 20px !important;
+}
