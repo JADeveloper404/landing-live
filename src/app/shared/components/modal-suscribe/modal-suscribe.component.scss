@@ -1,0 +1,119 @@
+@import "/src/styles.scss";
+
+.container {
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+
+    span {
+      cursor: pointer;
+    }
+  }
+
+  .texto {
+    margin-bottom: 30px;
+
+    p {
+      color: $colorDarkBlue;
+      text-align: center;
+      font-weight: 700;
+      font-size: 14.5px;
+    }
+  }
+}
+
+.form-col {
+  width: 100%;
+  margin-bottom: 25px;
+
+  .form-input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $color-gray;
+    color: $color-gray;
+    font-size: 14.5px;
+    padding-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+  }
+
+  .form-input:active {
+    border-bottom: 1px solid $color-gray;
+  }
+
+  .error {
+    color: red;
+    font-size: 11px;
+    background-color: #fff;
+  }
+
+  .input-error {
+    border-color: red;
+  }
+
+  .input-error::placeholder {
+    color: red;
+  }
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 2px;
+
+  p {
+    font-size: 12px;
+  }
+}
+
+.check-autoriza {
+  width: 13px;
+  height: 13px;
+  border-radius: 0px;
+  display: inline-block;
+}
+
+.celular {
+  display: flex;
+  padding-bottom: 5px;
+  gap: 10px;
+
+  .indicativo {
+    width: 50% !important;
+  }
+
+  .phone {
+    width: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+
+  .btn {
+    text-transform: uppercase;
+    background-color: $colorDarkBlue;
+    color: $colorOrange;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+
+    &:disabled,
+    &[disabled] {
+      border: 1px solid #999999;
+      background-color: #cccccc;
+      color: #666666;
+    }
+  }
+}

@@ -40,7 +40,7 @@ export class ThirdSectionComponent implements OnInit {
   openModal(promo: boolean) {
     this.dialog.open(ModalButtonsBuyComponent, {
       panelClass: "custom-modal",
-      maxWidth: "90%",
+      maxWidth: "95%",
       data: {
         promo
       }

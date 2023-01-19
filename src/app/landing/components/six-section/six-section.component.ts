@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { ModalSuscribeComponent } from 'src/app/shared/components/modal-suscribe/modal-suscribe.component';
 
 @Component({
   selector: 'app-six-section',
@@ -15,7 +16,10 @@ export class SixSectionComponent implements OnInit {
   }
 
   openModal() {
-    // this.dialog.open();
+    this.dialog.open(ModalSuscribeComponent, {
+      panelClass: "custom-modal",
+      maxWidth: "95%"
+    });
   }
 
 }

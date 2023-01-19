@@ -4,16 +4,20 @@ import { BuyButtonComponent } from './components/buy-button/buy-button.component
 import { MenuComponent } from './components/menu/menu.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ModalButtonsBuyComponent } from './components/modal-buttons-buy/modal-buttons-buy.component';
+import { ModalSuscribeComponent } from './components/modal-suscribe/modal-suscribe.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     BuyButtonComponent,
     MenuComponent,
     FooterComponent,
-    ModalButtonsBuyComponent
+    ModalButtonsBuyComponent,
+    ModalSuscribeComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule
   ],
   exports: [
     BuyButtonComponent,
