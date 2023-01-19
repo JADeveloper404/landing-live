@@ -37,11 +37,12 @@ export class ThirdSectionComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openModal() {
+  openModal(promo: boolean) {
     this.dialog.open(ModalButtonsBuyComponent, {
       panelClass: "custom-modal",
+      maxWidth: "90%",
       data: {
-        promo: true
+        promo
       }
     })
   }

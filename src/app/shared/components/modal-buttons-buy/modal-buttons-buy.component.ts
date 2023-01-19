@@ -8,7 +8,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 })
 export class ModalButtonsBuyComponent implements OnInit {
   constructor(
-    private dialogRef: MatDialogRef<ModalButtonsBuyComponent>,
+    public dialogRef: MatDialogRef<ModalButtonsBuyComponent>,
     @Inject(MAT_DIALOG_DATA) public data: { promo: boolean; }
   ) {}
 

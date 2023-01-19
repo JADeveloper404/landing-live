@@ -1,1 +1,21 @@
-<p>modal-buttons-buy works!</p>
+<div class="container">
+  <div class="header">
+    <span class="material-icons" (click)="dialogRef.close(false)"> close </span>
+  </div>
+
+  <div class="texto desktop">
+    <p>Para proceder con tu compra,</p>
+    <p>selecciona una opción:</p>
+  </div>
+
+  <div class="texto cel">
+    <p>Para proceder con tu compra, selecciona una opción:</p>
+  </div>
+
+  <div class="buttons">
+    <button class="btn-buy one" *ngIf="!data.promo">1 libro + <span>Envío nacional</span></button>
+    <button class="btn-buy one" *ngIf="!data.promo">1 libro + <span>Envío internacional</span></button>
+    <button class="btn-buy pack">pack 3 libros + <span>Envío nacional</span></button>
+    <button class="btn-buy pack">pack 3 libros + <span>Envío internacional</span></button>
+  </div>
+</div>

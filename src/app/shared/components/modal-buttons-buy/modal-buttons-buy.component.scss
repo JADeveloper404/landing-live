@@ -1,1 +1,80 @@
 @import "/src/styles.scss";
+
+.container {
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+
+    span {
+      cursor: pointer;
+    }
+  }
+
+  .texto {
+    margin-bottom: 30px;
+
+    p {
+      color: $colorBlack;
+      text-align: center;
+      font-weight: 700;
+      font-size: 12px;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btn-buy {
+      text-transform: uppercase;
+      display: block;
+      width: 100%;
+      padding: 10px 20px;
+      font-size: 12px;
+      border-radius: 50px;
+      font-weight: bold;
+      border: none;
+      font-family: "Poppins", sans-serif;
+      cursor: pointer;
+      margin-bottom: 20px;
+
+      span {
+        font-weight: normal;
+        text-transform: none;
+      }
+    }
+
+    .one {
+      background-color: $colorViolet;
+      color: $colorWhite;
+    }
+
+    .pack {
+      background-color: $colorDarkBlue;
+      color: $colorOrange;
+    }
+  }
+}
+
+.desktop {
+  display: none;
+}
+
+
+@media screen and(min-width: 700px) {
+  .desktop {
+    display: block;
+  }
+
+  .cel {
+    display: none;
+  }
+
+  .container > .buttons > .btn-buy {
+    width: 300px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}

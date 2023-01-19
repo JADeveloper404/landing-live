@@ -16,7 +16,7 @@
           alt="Libro 2"
           width="280px"
         />
-        <app-buy-button class="btn" (clickButton)="openModal()"></app-buy-button>
+        <app-buy-button class="btn" (clickButton)="openModal(false)"></app-buy-button>
       </div>
     </div>
   </div>
@@ -42,7 +42,7 @@
   </div>
 
   <div class="container-center">
-    <button class="btn-pack" (click)="openModal()">COMPRAR PACK 3 LIBROS</button>
+    <button class="btn-pack" (click)="openModal(true)">COMPRAR PACK 3 LIBROS</button>
   </div>
 
   <div class="content-info text-cel">
