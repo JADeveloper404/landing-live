@@ -2,5 +2,11 @@ export interface IDataEmail {
   nombre: string;
   celular: string;
   correo: string;
-  autoriza: boolean;
+  indicativo: string;
+  autoriza?: boolean;
+}
+
+export interface Response {
+  message: string;
+  statusCode: number;
 }

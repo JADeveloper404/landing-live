@@ -11,7 +11,7 @@ export class BaseService {
   constructor(private http: HttpClient) {}
 
   getDataWompi(id: string) {
-    return this.http.get(`https://sandbox.wompi.co/v1/transactions/${id}`);
+    return this.http.get(`https://production.wompi.co/v1/transactions/${id}`);
   }
 
   postMethod(methodName: string, body: any) {

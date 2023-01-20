@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 import { BaseService } from 'src/app/services/base.service';
-import { IDataEmail } from '../../interfaces/IDataEmail.interface';
+import { IDataEmail, Response } from '../../interfaces/IDataEmail.interface';
 
 @Component({
   selector: 'app-modal-suscribe',
@@ -10,6 +10,8 @@ import { IDataEmail } from '../../interfaces/IDataEmail.interface';
   styleUrls: ['./modal-suscribe.component.scss'],
 })
 export class ModalSuscribeComponent implements OnInit {
+  load = false;
+
   constructor(
     public dialogRef: MatDialogRef<ModalSuscribeComponent>,
     private formBuilder: FormBuilder,
@@ -33,8 +35,9 @@ export class ModalSuscribeComponent implements OnInit {
           Validators.maxLength(10),
         ],
       ],
+      indicativo: ['57', Validators.required],
       correo: ['', [Validators.required, Validators.email]],
-      autoriza: [null, Validators.required],
+      autoriza: [false, Validators.required],
     });
   }
 
@@ -49,8 +52,32 @@ export class ModalSuscribeComponent implements OnInit {
     return false;
   }
 
+  validateCelIndicativo() {
+    if (
+      (this.formSuscribe.controls['celular'].invalid &&
+        this.formSuscribe.controls['celular'].touched) ||
+      (this.formSuscribe.controls['indicativo'].invalid &&
+        this.formSuscribe.controls['indicativo'].touched)
+    ) {
+      return true;
+    }
+
+    return false;
+  }
+
   sendEmail() {
+    this.load = true;
     const data: IDataEmail = this.formSuscribe.getRawValue();
-    console.log('data: ', data);
+    delete data.autoriza;
+
+    this.baseService.postMethod('users', data).subscribe((res) => {
+      if (res) {
+        this.formSuscribe.reset({
+          indicativo: '57',
+          autoriza: false,
+        });
+        this.load = false;
+      }
+    });
   }
 }

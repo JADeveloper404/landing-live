@@ -32,21 +32,39 @@
       </div>
 
       <div class="form-col">
-        <input
-          class="form-input phone"
-          formControlName="celular"
-          type="text"
-          placeholder="Celular"
-          [ngClass]="{ 'input-error': validateInput('celular') }"
-        />
+        <div class="celular">
+          <input
+            class="form-input indicativo"
+            formControlName="indicativo"
+            type="text"
+            placeholder="Ind."
+            [ngClass]="{ 'input-error': validateInput('celular') }"
+          />
 
-        <span class="error" *ngIf="formSuscribe.get('celular')?.errors?.['required'] && formSuscribe.get('celular')?.touched">
+          <input
+            class="form-input phone"
+            formControlName="celular"
+            type="text"
+            placeholder="Celular"
+            [ngClass]="{ 'input-error': validateInput('celular') }"
+          />
+        </div>
+        <span
+          class="error"
+          *ngIf="formSuscribe.get('celular')?.errors?.['required'] && formSuscribe.get('celular')?.touched"
+        >
           Debe llenar el celular
         </span>
-        <span class="error" *ngIf="formSuscribe.get('celular')?.errors?.['minlength']">
+        <span
+          class="error"
+          *ngIf="formSuscribe.get('celular')?.errors?.['minlength']"
+        >
           Debe tener mínimo 10 números
         </span>
-        <span class="error" *ngIf="formSuscribe.get('celular')?.errors?.['maxlength']">
+        <span
+          class="error"
+          *ngIf="formSuscribe.get('celular')?.errors?.['maxlength']"
+        >
           Debe tener máximo 10 números
         </span>
       </div>
@@ -89,7 +107,15 @@
     </form>
 
     <div class="button">
-      <button class="btn" (click)="sendEmail()" [disabled]="formSuscribe.invalid">Suscribirme</button>
+      <button
+        class="btn"
+        (click)="sendEmail()"
+        [disabled]="
+          formSuscribe.invalid || load || formSuscribe.get('autoriza')?.value === false
+        "
+      >
+        Suscribirme
+      </button>
     </div>
   </div>
 </div>
