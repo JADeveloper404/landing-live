@@ -9,9 +9,7 @@
   </div>
 
   <div class="buttons">
-    <button class="btn-buy one" *ngIf="!data.promo">1 libro + <span>Envío nacional</span></button>
-    <button class="btn-buy one" *ngIf="!data.promo">1 libro + <span>Envío internacional</span></button>
-    <button class="btn-buy pack">pack 3 libros + <span>Envío nacional</span></button>
-    <button class="btn-buy pack">pack 3 libros + <span>Envío internacional</span></button>
+    <button class="btn-buy one" (click)="redirect('https://checkout.wompi.co/l/YaO6uR')">1 libro + <span>Envío nacional</span></button>
+    <button class="btn-buy pack" (click)="redirect('https://checkout.wompi.co/l/hYeApJ')">pack 3 libros + <span>Envío nacional</span></button>
   </div>
 </div>

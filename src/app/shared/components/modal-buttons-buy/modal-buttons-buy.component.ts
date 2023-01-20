@@ -13,4 +13,8 @@ export class ModalButtonsBuyComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {}
+
+  redirect(url: string) {
+    window.open(url, "_blank");
+  }
 }

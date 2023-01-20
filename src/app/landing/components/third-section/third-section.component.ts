@@ -47,4 +47,7 @@ export class ThirdSectionComponent implements OnInit {
     })
   }
 
+  redirect() {
+    window.open("https://checkout.wompi.co/l/hYeApJ", "_blank");
+  }
 }
