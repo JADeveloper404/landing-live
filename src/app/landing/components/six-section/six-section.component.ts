@@ -14,7 +14,7 @@ export class SixSectionComponent implements OnInit {
   }
 
   redirect() {
-    window.open("https://checkout.wompi.co/l/BrogYN", "_blank");
+    window.open("https://checkout.wompi.co/l/ZPlZJI", "_blank");
   }
 
 }
