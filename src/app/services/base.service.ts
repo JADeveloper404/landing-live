@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class BaseService {
 
-  private localApi = "http://localhost:3000/";
+  private localApi = "https://landing-live-server-production.up.railway.app/";
 
   constructor(private http: HttpClient) {}
 

@@ -63,8 +63,18 @@
   flex-direction: row;
   gap: 2px;
 
-  p {
-    font-size: 12px;
+  a {
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $colorDarkBlue;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 12px;
+    }
   }
 }
 

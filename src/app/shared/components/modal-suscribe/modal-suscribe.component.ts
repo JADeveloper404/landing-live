@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { MatDialogRef } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { BaseService } from 'src/app/services/base.service';
 import { IDataEmail, Response } from '../../interfaces/IDataEmail.interface';
+import { ModalTratamientoComponent } from '../modal-tratamiento/modal-tratamiento.component';
 
 @Component({
   selector: 'app-modal-suscribe',
@@ -15,7 +16,8 @@ export class ModalSuscribeComponent implements OnInit {
   constructor(
     public dialogRef: MatDialogRef<ModalSuscribeComponent>,
     private formBuilder: FormBuilder,
-    private baseService: BaseService
+    private baseService: BaseService,
+    private dialog: MatDialog
   ) {
     this.buildForm();
   }
@@ -79,5 +81,12 @@ export class ModalSuscribeComponent implements OnInit {
         this.load = false;
       }
     });
+  }
+
+  openModalTratamiento() {
+    this.dialog.open(ModalTratamientoComponent, {
+      // maxWidth: '95%',
+      height: "90vh"
+    })
   }
 }

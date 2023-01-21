@@ -6,6 +6,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ModalButtonsBuyComponent } from './components/modal-buttons-buy/modal-buttons-buy.component';
 import { ModalSuscribeComponent } from './components/modal-suscribe/modal-suscribe.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ModalTratamientoComponent } from './components/modal-tratamiento/modal-tratamiento.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MenuComponent,
     FooterComponent,
     ModalButtonsBuyComponent,
-    ModalSuscribeComponent
+    ModalSuscribeComponent,
+    ModalTratamientoComponent
   ],
   imports: [
     CommonModule,
