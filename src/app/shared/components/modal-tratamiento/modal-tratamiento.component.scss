@@ -1,10 +1,8 @@
 @import "/src/styles.scss";
 
-.cdk-overlay-pane {
-  max-width: 95% !important;
-}
-
 .container {
+  width: 100%;
+
   .header {
     display: flex;
     justify-content: flex-end;
@@ -20,11 +18,20 @@
     font-size: 20px;
     text-transform: uppercase;
   }
+
+  .text {
+    padding: 20px 10px 10px 10px;
+    max-height: 500px;
+    overflow-y: auto;
+    p {
+      text-align: justify;
+    }
+  }
 }
 
 
 @media screen and (min-width: 700px) {
-  .cdk-overlay-pane {
-    max-width: 50% !important;
+  .container {
+    width: 600px;
   }
 }

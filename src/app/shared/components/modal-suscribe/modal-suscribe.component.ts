@@ -85,8 +85,10 @@ export class ModalSuscribeComponent implements OnInit {
 
   openModalTratamiento() {
     this.dialog.open(ModalTratamientoComponent, {
-      // maxWidth: '95%',
-      height: "90vh"
+      panelClass: "custom-modal",
+      maxWidth: "95%",
+      height: "90vh",
+      maxHeight: "90vh"
     })
   }
 }
