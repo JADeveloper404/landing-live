@@ -25,6 +25,13 @@
     overflow-y: auto;
     p {
       text-align: justify;
+      margin-bottom: 20px;
+      font-size: 14.5px;
+
+      a {
+        color: $colorViolet;
+        text-decoration: none;
+      }
     }
   }
 }
